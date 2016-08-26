@@ -33,7 +33,9 @@ def after_request(response):
 @app.route('/',methods=['GET', 'POST'])
 def show_landing():
     if request.method == 'POST':
-        app.logger.debug(request.form)
-        raise
+        email = request.form['email']
+        app.logger.debug(email)
+        return render_template('success.html')
+    else:
 
-    return render_template('landing.html')
+        return render_template('landing.html')
