@@ -1,0 +1,3 @@
+venv
+*pyc
+signups.db
