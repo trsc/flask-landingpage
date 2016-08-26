@@ -30,6 +30,10 @@ def after_request(response):
     db.close()
     return response
 
-@app.route('/')
+@app.route('/',methods=['GET', 'POST'])
 def show_landing():
+    if request.method == 'POST':
+        app.logger.debug(request.form)
+        raise
+
     return render_template('landing.html')
