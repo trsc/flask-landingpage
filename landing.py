@@ -5,6 +5,7 @@ from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, make_response
 from model import db, initdb, Signup
 from flask_babel import Babel, gettext
+from datetime import datetime
 import config
 
 app = Flask(__name__)
@@ -38,7 +39,9 @@ def after_request(response):
 def show_landing():
     if request.method == 'POST':
         email = request.form['email']
-        app.logger.debug(email)
+        app.logger.debug(email)        
+        signup = Signup(email = email, signup_date = datetime.now())
+        signup.save()
         return render_template('success.html')
     else:
 
