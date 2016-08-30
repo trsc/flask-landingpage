@@ -4,15 +4,15 @@ import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, make_response
 from model import db, initdb, Signup
+import config
 
 app = Flask(__name__)
-app.config.from_object(__name__)
 
 # Load default config and override config from an environment variable
-app.config.update(dict(
-    SECRET_KEY='development key',
-))
-app.config.from_envvar('LANDING_SETTINGS', silent=True)
+app.config.from_object('config.DevelopmentConfig')
+app.config.from_envvar('FLASK_SETTINGS', silent=True)
+
+#app.config.from_envvar('LANDING_SETTINGS', silent=True) # Env can point to cfg file
 
 @app.cli.command('initdb')
 def initdb_command():
@@ -39,3 +39,6 @@ def show_landing():
     else:
 
         return render_template('landing.html')
+
+if __name__ == '__main__':
+    app.run()
