@@ -4,17 +4,17 @@
 <div class="container-fluid">
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-3"> HelloBudget, coming soon!<span></span></h1>
-      <h2>A tool to track and plan how your family spends money.</h2>
+      <h1 class="display-3">{{ gettext('HelloBudget, coming soon!') }}<span></span></h1>
+      <h2>{{ gettext('A tool to track and plan how your family spends money.') }}</h2>
 
       <div class="row">
-        <div class="offset-md-3 col-md-6">
+        <div class="offset-md-2 col-md-8">
 
           <form class="form-inline" id ="signup-form" action="{{ url_for('show_landing') }}" method=post>
             <div class="form-group">
               <input type="email" name="email" class="form-control" placeholder="jane.doe@example.com" >
             </div>
-            <button type="submit" class="btn btn-primary">Sign up for the beta</button>
+            <button type="submit" class="btn btn-primary">{{ gettext('Sign up for the beta') }}</button>
           </form>
 
         </div>
@@ -27,19 +27,18 @@
     <div class="container">
       <div class="row feature-row text-xs-center">
         <div class="col-md-4">
-            <!-- <i class="icon fa fa-lightbulb-o" role="presentation"></i>        <p> -->
-            <strong>Extremely easy to use.</strong><br>
-            There are no lists of numbers or boring tables. It looks great and works everywhere.      </p>
+            <strong>{{ gettext('Extremely easy to use.') }}</strong><br>
+            {{ gettext('There are no lists of numbers or boring tables. It looks great and works everywhere.') }}</p>
         </div>
         <div class="col-md-4">
-          <!-- <i class="icon fa fa-pie-chart" role="presentation"></i>        <p> -->
-          <strong>See where your money goes.</strong><br>
-          Find out how much you’re spending on categories like food, health and entertainment.</p>
+
+          <strong>{{ gettext('See where your money goes.') }}</strong><br>
+          {{ gettext('Find out how much you’re spending on categories like food, health and entertainment.') }}</p>
        </div>
         <div class="col-md-4">
           <!-- <i class="icon fa fa-check-circle" role="presentation"></i>        <p> -->
-          <strong>Set goals and see your progress.</strong><br>
-          Always know your status. Reduce unwanted spending and plan for the future.</p>
+          <strong>{{ gettext('Set goals and see your progress.') }}</strong><br>
+          {{ gettext('Always know your status. Reduce unwanted spending and plan for the future.') }}</p>
         </div>
       </div>
     </div>

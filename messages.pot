@@ -1,0 +1,58 @@
+# Translations template for landing.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the landing project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: landing 1.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-08-30 16:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: templates/landing.html:7
+msgid "HelloBudget, coming soon!"
+msgstr ""
+
+#: templates/landing.html:8
+msgid "A tool to track and plan how your family spends money."
+msgstr ""
+
+#: templates/landing.html:17
+msgid "Sign up for the beta"
+msgstr ""
+
+#: templates/landing.html:30
+msgid "Extremely easy to use."
+msgstr ""
+
+#: templates/landing.html:31
+msgid ""
+"There are no lists of numbers or boring tables. It looks great and works "
+"everywhere."
+msgstr ""
+
+#: templates/landing.html:35
+msgid "See where your money goes."
+msgstr ""
+
+#: templates/landing.html:36
+msgid ""
+"Find out how much you’re spending on categories like food, health and "
+"entertainment."
+msgstr ""
+
+#: templates/landing.html:40
+msgid "Set goals and see your progress."
+msgstr ""
+
+#: templates/landing.html:41
+msgid "Always know your status. Reduce unwanted spending and plan for the future."
+msgstr ""
