@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: landing 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-08-30 16:11+0200\n"
+"POT-Creation-Date: 2016-08-30 17:30+0200\n"
 "PO-Revision-Date: 2016-08-30 16:12+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -24,7 +24,7 @@ msgstr "HelloBudget, demnächst verfügbar"
 
 #: templates/landing.html:8
 msgid "A tool to track and plan how your family spends money."
-msgstr "Ein online Haushaltsbuch für familien"
+msgstr "Ein online Haushaltsbuch für Familien"
 
 #: templates/landing.html:17
 msgid "Sign up for the beta"
@@ -40,20 +40,40 @@ msgid ""
 "everywhere."
 msgstr "Keine langen Listen oder Tabellen. Sieht gut aus und funktioniert überall"
 
-#: templates/landing.html:35
+#: templates/landing.html:36
 msgid "See where your money goes."
 msgstr "Wissen, wo das Geld hingeht"
 
-#: templates/landing.html:36
+#: templates/landing.html:37
 msgid ""
 "Find out how much you’re spending on categories like food, health and "
 "entertainment."
-msgstr "Auf einen Blick sehen, in welchen Kategorien wieviel Geld ausgegeben wurde."
+msgstr ""
+"Auf einen Blick sehen, in welchen Kategorien wieviel Geld ausgegeben "
+"wurde."
 
-#: templates/landing.html:40
+#: templates/landing.html:41
 msgid "Set goals and see your progress."
 msgstr "Ziele setzen"
 
-#: templates/landing.html:41
+#: templates/landing.html:42
 msgid "Always know your status. Reduce unwanted spending and plan for the future."
-msgstr "Lerne mehr über deine Finanzen. Triff bessere Entscheidungen. Bleib informiert"
+msgstr ""
+"Lerne mehr über deine Finanzen. Triff bessere Entscheidungen. Bleib "
+"informiert"
+
+#: templates/layout.html:32
+msgid "Made by:"
+msgstr "Ein Projekt von:"
+
+#: templates/layout.html:33
+msgid "Follow Us:"
+msgstr "Folge uns:"
+
+#: templates/success.html:8
+msgid "THANKS FOR SIGNING UP!"
+msgstr "DANKE FÜR DEIN INTERESSE"
+
+#: templates/success.html:9
+msgid "We will inform you as soon as the beta is ready"
+msgstr "Wir geben Bescheid, sobald die Beta Version fertig ist"

@@ -14,13 +14,13 @@ Also See here: http://flask.pocoo.org/docs/0.11/installation/#installation
 Leave virtual environment with `$ deactivate`
 
 # Translate
-## Setup
+To initialise, do this
 1. Extract texts:  `pybabel extract --project landing-page --version 1 -F babel.cfg -o messages.pot .`
-2. Init translation (*only run this once*): `pybabel init -i messages.pot -d translations -l de`
+2. Init German translation (*only run this once*): `pybabel init -i messages.pot -d translations -l de`
 
-## Run
-3. Compile: `pybabel compile -d translations`
-4. Update `pybabel update -i messages.pot -d translations`
+If texts have been added or changed
+3. Update `pybabel update -i messages.pot -d translations`
+4. Compile: `pybabel compile -d translations`
 
 
 # Installing a new package via pip
