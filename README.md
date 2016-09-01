@@ -1,10 +1,10 @@
 # Landing page
-A very lightweight landing page with email signup
-* Uses the following:
-   * Python Flask
-   * Babel and gettext. German translations are included.
-   * sqlite. File-based database. Anything else would probably be over-engineered.
+A very lightweight landing page with email signup and i18n. Uses:
 
+   * Python Flask
+   * sqlite.
+
+Landing page was originally created for [hellobudget.co](http://hellobudget.co)
 
 # Setup
 1. Install packages `sudo apt install python-pip python-virtualenv python-dev`
@@ -18,16 +18,28 @@ Also See here: http://flask.pocoo.org/docs/0.11/installation/#installation
 Leave virtual environment with `$ deactivate`
 
 # Translate
-To initialise, do this
+To initialise, do this:
+
 1. Extract texts:  `pybabel extract --project landing-page --version 1 -F babel.cfg -o messages.pot .`
 2. Init German translation (*only run this once*): `pybabel init -i messages.pot -d translations -l de`
 
-If texts have been added or changed
-3. Update `pybabel update -i messages.pot -d translations`
+If texts in source language have been changed or added:
+
+1. `pybabel extract --project landing-page --version 1 -F babel.cfg -o messages.pot .`
 4. Do translations
+2. Continue as below
+
+If translations have been changed:
+
+3. Update `pybabel update -i messages.pot -d translations`
 4. Compile: `pybabel compile -d translations`
 
 
 # Installing a new package via pip
 1. Install: `pip install peewee`
 2. Save to requirements `pip freeze > requirements.txt`
+
+# Deployment Notes
+* If you're using Apache in production, [here's a good tutorial](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps).
+* Check Apache error log if you see a 500 error
+* Make sure `signups.db` and `/static/.webassets-cache/` are universally writable
