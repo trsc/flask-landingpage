@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: landing 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-08-30 17:30+0200\n"
+"POT-Creation-Date: 2016-09-01 14:29+0200\n"
 "PO-Revision-Date: 2016-08-30 16:12+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -30,21 +30,21 @@ msgstr "Ein online Haushaltsbuch für Familien"
 msgid "Sign up for the beta"
 msgstr "Ich möchte mehr wissen"
 
-#: templates/landing.html:30
-msgid "Extremely easy to use."
-msgstr "Einfache Bedienung"
+#: templates/landing.html:29
+msgid "Friendly and easy to use."
+msgstr "Sehr einfache Bedienung"
 
-#: templates/landing.html:31
+#: templates/landing.html:30
 msgid ""
 "There are no lists of numbers or boring tables. It looks great and works "
 "everywhere."
 msgstr "Keine langen Listen oder Tabellen. Sieht gut aus und funktioniert überall"
 
-#: templates/landing.html:36
+#: templates/landing.html:35
 msgid "See where your money goes."
 msgstr "Wissen, wo das Geld hingeht"
 
-#: templates/landing.html:37
+#: templates/landing.html:36
 msgid ""
 "Find out how much you’re spending on categories like food, health and "
 "entertainment."
@@ -52,21 +52,21 @@ msgstr ""
 "Auf einen Blick sehen, in welchen Kategorien wieviel Geld ausgegeben "
 "wurde."
 
-#: templates/landing.html:41
+#: templates/landing.html:40
 msgid "Set goals and see your progress."
 msgstr "Ziele setzen"
 
-#: templates/landing.html:42
+#: templates/landing.html:41
 msgid "Always know your status. Reduce unwanted spending and plan for the future."
 msgstr ""
 "Lerne mehr über deine Finanzen. Triff bessere Entscheidungen. Bleib "
 "informiert"
 
-#: templates/layout.html:32
+#: templates/layout.html:33
 msgid "Made by:"
 msgstr "Ein Projekt von:"
 
-#: templates/layout.html:33
+#: templates/layout.html:34
 msgid "Follow Us:"
 msgstr "Folge uns:"
 
