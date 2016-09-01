@@ -60,9 +60,6 @@ $btn-success-border:                    darken($btn-success-bg, 5%);
 
 @import "/stylesheets/bootstrap";
 
-/* Phoenix flash messages */
-.alert:empty { display: none; }
-
 html {
   /* required for sticky footer */
   position: relative;
@@ -223,10 +220,65 @@ hr {
   border-bottom-color: #bbb;
 }
 
+.jumbotron {
+  text-align: center;
+  background-image: url(http://www.badger-sett.com/images/jumbotron.jpg);
+  background-size: cover;
+  margin-bottom: 0;
+
+  h1 {
+    color: white;
+    text-shadow: 1px 1px 8px rgba(154, 154, 154, 0.5);
+    font-weight: bold;
+  }
+
+  h2 {
+    color: white;
+    text-shadow: 1px 1px 8px rgba(154, 154, 154, 0.5);
+  }
+
+  .btn-lg {
+    margin: 1em;
+    font-size: 2.7em;
+  }
+}
 
 
+.centered-row {
+  text-align: center;
+}
 
-@import "homepage";
+.feature-row {
+  padding: 2em;
+  line-height: 1.7em;
+  font-size: 20px;
+  // border-bottom: 1px solid #ece0cd;
+
+  h2 {
+    margin: 0.5em 0 0.5em 0.4em
+  }
+
+  &.text-xs-center h2 {
+    margin: 0.5em 0;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
+  .icon {
+    color: $hb-turquoise;
+    font-size: 3.3em;
+  }
+
+}
+
+.bg-gray {
+    background-color: #eee;
+    border-bottom: 1px solid #ece0cd;
+    border-top: 1px solid #ece0cd;
+}
+
 
 // should always be imported last
 @import "media_breakpoints";
