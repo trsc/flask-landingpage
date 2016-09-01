@@ -51,9 +51,13 @@ def show_landing():
             signup.save()
         except IntegrityError:
             pass
-        return render_template('success.html')
+        return redirect(url_for('success'))
     else:
         return render_template('landing.html')
+
+@app.route('/success')
+def success():
+    return render_template('success.html')
 
 if __name__ == '__main__':
     app.run()
