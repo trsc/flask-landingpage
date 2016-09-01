@@ -1,6 +1,6 @@
 import peewee
 
-db = peewee.SqliteDatabase("signups.db")
+db = peewee.SqliteDatabase("/var/www/hellobudget.co/signups.db")
 
 ########################################################################
 class Signup(peewee.Model):
