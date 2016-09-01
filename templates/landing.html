@@ -12,7 +12,7 @@
 
           <form class="form-inline" id ="signup-form" action="{{ url_for('show_landing') }}" method=post>
             <div class="form-group form-group-lg">
-              <input type="email" name="email" class="form-control md-col-2" placeholder="kitty@example.com" >
+              <input type="email" name="email" class="form-control md-col-2" placeholder="kitty@example.com" required="true" >
             </div>
             <button type="submit" class="btn btn-primary btn-lg">{{ gettext('Sign up for the beta') }}</button>
           </form>
