@@ -70,12 +70,13 @@ body {
   padding-top: 82px;
   /* Margin bottom by footer height */
   margin-bottom: 77px;
+  color: $hb-light-gray;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: 2.7rem;
-  // color: $hb-turquoise;
-  font-family: 'Jaldi', sans-serif;
+  color: $hb-dark-turquoise;
 }
 
 .hb-active {
@@ -88,6 +89,7 @@ h2 {
 .navbar {
   background: #fff;
   border-bottom: 1px solid darken($body-bg, 10%);
+  height: 90px;
 }
 
 @mixin colored-shadow($color) {
@@ -103,19 +105,6 @@ h2 {
 
 .box-shadow-low-down {
   box-shadow: inset 0 -1px 0 transparentize(#fff, 0.1), inset 0 1px 0 transparentize($body-color, 0.4);
-}
-
-.form-control-label {
-  padding-left: 0;
-  display: block;
-
-  &.optional:after {
-    content: " *"
-  }
-}
-
-.form-group > label {
-  font-weight: 500;
 }
 
 
@@ -166,32 +155,6 @@ h2 {
 }
 
 
-.btn-group {
-  .btn.btn-secondary {
-    @extend .box-shadow-low;
-  }
-
-  label {
-    margin-bottom: 0 !important;
-  }
-}
-
-.navbar-nav .nav-item {
-  padding-top: 7px;
-}
-
-.navbar-nav .nav-link {
-  padding: 0;
-}
-.nav-item, .nav-link {
-  height: 70px;
-  line-height: 70px;
-}
-
-.nav-link i {
-  display: none;
-}
-
 .footer {
   position: absolute;
   bottom: 0;
@@ -209,9 +172,6 @@ h2 {
   padding-top: 18px;
 }
 
-.d-inline {
-  display: inline-block;
-}
 
 hr {
   margin: 10px 0;
@@ -220,8 +180,9 @@ hr {
   border-bottom-color: #bbb;
 }
 
-.jumbotron {
+.container-fluid  .jumbotron {
   text-align: center;
+  border-radius: 0;
   background-image: url(http://www.badger-sett.com/images/jumbotron.jpg);
   background-size: cover;
   margin-bottom: 0;
@@ -229,7 +190,7 @@ hr {
   h1 {
     color: white;
     text-shadow: 1px 1px 8px rgba(154, 154, 154, 0.5);
-    font-weight: bold;
+    font-weight: 800;
   }
 
   h2 {
@@ -237,10 +198,6 @@ hr {
     text-shadow: 1px 1px 8px rgba(154, 154, 154, 0.5);
   }
 
-  .btn-lg {
-    margin: 1em;
-    font-size: 2.7em;
-  }
 }
 
 
@@ -266,10 +223,6 @@ hr {
     list-style-type: square;
   }
 
-  .icon {
-    color: $hb-turquoise;
-    font-size: 3.3em;
-  }
 
 }
 
@@ -277,6 +230,10 @@ hr {
     background-color: #eee;
     border-bottom: 1px solid #ece0cd;
     border-top: 1px solid #ece0cd;
+}
+
+#signup-form {
+  padding: 3em;
 }
 
 

@@ -13,17 +13,12 @@ app = Flask(__name__)
 babel = Babel(app)
 
 assets = Environment(app)
-#assets.url = app.static_url_path
-#scss = Bundle('styles.scss', filters='pyscss', output='all.css')
-#assets.register('scss_all', scss)
-
 scss = Bundle('styles.scss', filters='pyscss', output='gen/styles.css')
 assets.register('scss_all', scss)
 
 # Load default config and override config from an environment variable
 app.config.from_object('config.DevelopmentConfig')
 app.config.from_envvar('FLASK_SETTINGS', silent=True)
-
 
 @babel.localeselector
 def get_locale():
