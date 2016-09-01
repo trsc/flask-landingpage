@@ -32,7 +32,7 @@ msgstr "Ich möchte mehr wissen"
 
 #: templates/landing.html:29
 msgid "Friendly and easy to use."
-msgstr "Sehr einfache Bedienung"
+msgstr "Sehr einfache Bedienung."
 
 #: templates/landing.html:30
 msgid ""
@@ -42,7 +42,7 @@ msgstr "Keine langen Listen oder Tabellen. Sieht gut aus und funktioniert übera
 
 #: templates/landing.html:35
 msgid "See where your money goes."
-msgstr "Wissen, wo das Geld hingeht"
+msgstr "Wissen, wo das Geld hingeht."
 
 #: templates/landing.html:36
 msgid ""
@@ -54,13 +54,13 @@ msgstr ""
 
 #: templates/landing.html:40
 msgid "Set goals and see your progress."
-msgstr "Ziele setzen"
+msgstr "Ziele setzen und vorankommen."
 
 #: templates/landing.html:41
 msgid "Always know your status. Reduce unwanted spending and plan for the future."
 msgstr ""
 "Lerne mehr über deine Finanzen. Triff bessere Entscheidungen. Bleib "
-"informiert"
+"informiert."
 
 #: templates/layout.html:33
 msgid "Made by:"
@@ -76,4 +76,5 @@ msgstr "DANKE FÜR DEIN INTERESSE"
 
 #: templates/success.html:9
 msgid "We will inform you as soon as the beta is ready"
-msgstr "Wir geben Bescheid, sobald die Beta Version fertig ist"
+msgstr "Wir geben Bescheid, sobald die Beta Version fertig ist."
+
