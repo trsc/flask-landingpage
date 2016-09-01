@@ -6,10 +6,8 @@
     <div class="container">
       <h1 class="display-3">{{ gettext('HelloBudget, coming soon!') }}<span></span></h1>
       <h2>{{ gettext('A tool to track and plan how your family spends money.') }}</h2>
-
       <div class="row">
         <div>
-
           <form class="form-inline" id ="signup-form" action="{{ url_for('show_landing') }}" method=post>
             <div class="form-group form-group-lg">
               <input type="email" name="email" class="form-control md-col-2" placeholder="kitty@example.com" required="true" >
@@ -21,21 +19,17 @@
     </div>
   </div>
 </div>
-
   <div class="bg-gray">
     <div class="container">
       <div class="row feature-row text-xs-center">
         <div class="col-md-4">
             <h2>{{ gettext('Friendly and easy to use.') }}</h2>
             {{ gettext('There are no lists of numbers or boring tables. It looks great and works everywhere.') }}
-
         </div>
-
         <div class="col-md-4">
           <h2>{{ gettext('See where your money goes.') }}</h2>
           {{ gettext('Find out how much you’re spending on categories like food, health and entertainment.') }}
        </div>
-
         <div class="col-md-4">
           <h2>{{ gettext('Set goals and see your progress.') }}</h2>
           {{ gettext('Always know your status. Reduce unwanted spending and plan for the future.') }}
@@ -44,5 +38,4 @@
     </div>
   </div>
 </div>
-
 {% endblock %}
