@@ -5,15 +5,25 @@ from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, make_response
 from model import db, initdb, Signup
 from flask_babel import Babel, gettext
+from flask_assets import Environment, Bundle
 from datetime import datetime
 import config
 
 app = Flask(__name__)
 babel = Babel(app)
 
+assets = Environment(app)
+#assets.url = app.static_url_path
+#scss = Bundle('styles.scss', filters='pyscss', output='all.css')
+#assets.register('scss_all', scss)
+
+scss = Bundle('styles.scss', filters='pyscss', output='gen/styles.css')
+assets.register('scss_all', scss)
+
 # Load default config and override config from an environment variable
 app.config.from_object('config.DevelopmentConfig')
 app.config.from_envvar('FLASK_SETTINGS', silent=True)
+
 
 @babel.localeselector
 def get_locale():
@@ -39,12 +49,11 @@ def after_request(response):
 def show_landing():
     if request.method == 'POST':
         email = request.form['email']
-        app.logger.debug(email)        
+        #app.logger.debug(email)
         signup = Signup(email = email, signup_date = datetime.now())
         signup.save()
         return render_template('success.html')
     else:
-
         return render_template('landing.html')
 
 if __name__ == '__main__':

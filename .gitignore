@@ -1,3 +1,6 @@
 venv
 *pyc
 signups.db
+static/.webassets-cache
+static/gen
+bower_components

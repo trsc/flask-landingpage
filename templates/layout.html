@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Hello Budget</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='icon') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-  </head>
-  <body>
-    <nav class="navbar navbar-full navbar-fixed-top navbar-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="navbar-brand"><img src="{{ url_for('static', filename='hellobudget_logo.png') }}" alt="hellobudget"></div>
-          </div>
+  <title>Hello Budget</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="{{ url_for('static', filename='icon') }}">
+  {% assets "scss_all" %}
+    <link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
+  {% endassets %}
+</head>
+<body>
+  <nav class="navbar navbar-full navbar-fixed-top navbar-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="navbar-brand"><img src="{{ url_for('static', filename='hellobudget_logo.png') }}" alt="hellobudget"></div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    {% block body %}{% endblock %}
-
+  {% block body %}{% endblock %}
 
 <!-- footer -->
 <footer class="footer">
