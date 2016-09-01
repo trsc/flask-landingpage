@@ -17,7 +17,7 @@ scss = Bundle('styles.scss', filters='pyscss', output='gen/styles.css')
 assets.register('scss_all', scss)
 
 # Load default config and override config from an environment variable
-app.config.from_object('config.DevelopmentConfig')
+app.config.from_object('config.BaseConfig')
 app.config.from_envvar('FLASK_SETTINGS', silent=True)
 
 @babel.localeselector
