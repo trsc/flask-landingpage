@@ -1,13 +1,14 @@
 import peewee
 
-db = peewee.SqliteDatabase("/var/www/hellobudget.co/signups.db")
+#db = peewee.SqliteDatabase("/var/www/hellobudget.co/signups.db")
+db = peewee.SqliteDatabase("signups.db")
 
 ########################################################################
 class Signup(peewee.Model):
     """
     ORM model of the Game Table
     """
-    email       = peewee.CharField()
+    email       = peewee.CharField(unique=True)
     signup_date   = peewee.DateTimeField()
 
     class Meta:

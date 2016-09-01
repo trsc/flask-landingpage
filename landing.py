@@ -7,6 +7,7 @@ from model import db, initdb, Signup
 from flask_babel import Babel, gettext
 from flask_assets import Environment, Bundle
 from datetime import datetime
+from peewee import IntegrityError
 import config
 
 app = Flask(__name__)
@@ -17,7 +18,7 @@ scss = Bundle('styles.scss', filters='pyscss', output='gen/styles.css')
 assets.register('scss_all', scss)
 
 # Load default config and override config from an environment variable
-app.config.from_object('config.BaseConfig')
+app.config.from_object('config.DevelopmentConfig')
 app.config.from_envvar('FLASK_SETTINGS', silent=True)
 
 @babel.localeselector
@@ -46,7 +47,10 @@ def show_landing():
         email = request.form['email']
         #app.logger.debug(email)
         signup = Signup(email = email, signup_date = datetime.now())
-        signup.save()
+        try:
+            signup.save()
+        except IntegrityError:
+            pass
         return render_template('success.html')
     else:
         return render_template('landing.html')
