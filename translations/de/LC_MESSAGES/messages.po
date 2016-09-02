@@ -38,7 +38,7 @@ msgstr "Sehr einfache Bedienung."
 msgid ""
 "There are no lists of numbers or boring tables. It looks great and works "
 "everywhere."
-msgstr "Keine langen Listen oder Tabellen. Sieht gut aus und funktioniert überall"
+msgstr "Keine langen Listen oder Tabellen. Sieht gut aus und funktioniert überall."
 
 #: templates/landing.html:35
 msgid "See where your money goes."
