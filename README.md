@@ -1,10 +1,7 @@
-# Landing page
-A very lightweight landing page with email signup and i18n. Uses:
+# Flask Landing page
+A very lightweight landing page with email signup and i18n. It uses Python Flask and sqlite.
 
-   * Python Flask
-   * sqlite.
-
-Landing page was originally created for [hellobudget.co](http://hellobudget.co)
+This project was originally created for [hellobudget.co](http://hellobudget.co)
 
 # Setup
 1. Install packages `sudo apt install python-pip python-virtualenv python-dev`
@@ -39,7 +36,10 @@ If translations have been changed:
 1. Install: `pip install peewee`
 2. Save to requirements `pip freeze > requirements.txt`
 
-# Deployment Notes
-* If you're using Apache in production, [here's a good tutorial](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps).
+# Production Notes for Apache
+* [Here's a good tutorial](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps).
 * Check Apache error log if you see a 500 error
-* Make sure `signups.db` and `/static/.webassets-cache/` are universally writable
+* Make sure the following files and directories are universally writable. They will need be written to by the `www-data` user
+   * `signups.db`
+   * `/static/.webassets-cache/`
+   * `/static/gen`
