@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hello Budget</title>
+  <title>{{ gettext('HelloBudget - A budget tool for families') }}</title>
+  <meta name="description" content="{{ gettext('Online budget planner aimed at families.') }}">
+  <meta name="keywords" content="{{ gettext('budget, app, tool, finanical planning, financial tracking ') }}" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="author" content="">
   <link rel="stylesheet" href="{{ url_for('static', filename='icon') }}">
   <link href="https://fonts.googleapis.com/css?family=Raleway:500,800" rel="stylesheet">
   {% assets "scss_all" %}
@@ -25,7 +25,6 @@
   </nav>
 
   {% block body %}{% endblock %}
-
 
 <!-- footer -->
 <footer class="footer">
