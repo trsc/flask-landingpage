@@ -1,0 +1,6 @@
+# sudo apt-get install s3cmd
+# Credential file: /home/wrede/.s3cfg
+# Credential file created via:  s3cmd --configure
+
+# Sync sqlite file to AmazonS3
+s3cmd -v --progress --no-delete-removed sync ./signups.db s3://casparwrede-db-backup/$(date -I)-signups-backup.db
