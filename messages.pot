@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: landing-page 1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-09-01 14:29+0200\n"
+"POT-Creation-Date: 2016-09-06 14:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,36 +26,48 @@ msgstr ""
 msgid "A tool to track and plan how your family spends money."
 msgstr ""
 
-#: templates/landing.html:17
+#: templates/landing.html:15
 msgid "Sign up for the beta"
 msgstr ""
 
-#: templates/landing.html:29
+#: templates/landing.html:26
 msgid "Friendly and easy to use."
 msgstr ""
 
-#: templates/landing.html:30
+#: templates/landing.html:27
 msgid ""
 "There are no lists of numbers or boring tables. It looks great and works "
 "everywhere."
 msgstr ""
 
-#: templates/landing.html:35
+#: templates/landing.html:30
 msgid "See where your money goes."
 msgstr ""
 
-#: templates/landing.html:36
+#: templates/landing.html:31
 msgid ""
 "Find out how much you’re spending on categories like food, health and "
 "entertainment."
 msgstr ""
 
-#: templates/landing.html:40
+#: templates/landing.html:34
 msgid "Set goals and see your progress."
 msgstr ""
 
-#: templates/landing.html:41
+#: templates/landing.html:35
 msgid "Always know your status. Reduce unwanted spending and plan for the future."
+msgstr ""
+
+#: templates/layout.html:4
+msgid "HelloBudget - A budget tool for families"
+msgstr ""
+
+#: templates/layout.html:5
+msgid "Online budget planner aimed at families."
+msgstr ""
+
+#: templates/layout.html:6
+msgid "budget, app, tool, finanical planning, financial tracking "
 msgstr ""
 
 #: templates/layout.html:33
