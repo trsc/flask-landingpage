@@ -3,4 +3,4 @@
 # Credential file created via:  s3cmd --configure
 
 # Sync sqlite file to AmazonS3
-s3cmd -c /home/wrede/.s3cfg --progress --no-delete-removed sync ./signups.db s3://casparwrede-db-backup/$(date -I)-signups-backup.db
+/usr/local/bin/s3cmd -c /home/wrede/.s3cfg --progress --no-delete-removed sync ./signups.db s3://casparwrede-db-backup/$(date -I)-signups-backup.db
