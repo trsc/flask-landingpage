@@ -23,7 +23,13 @@ app.config.from_envvar('FLASK_SETTINGS', silent=True)
 
 @babel.localeselector
 def get_locale():
-    return request.accept_languages.best_match(app.config['LANGUAGES'].keys())
+    if request.path == '/en':
+        return 'en'
+    elif request.path == '/de':
+        return 'de'
+    else:
+        return request.accept_languages.best_match(app.config['LANGUAGES'].keys())
+
 
 @app.cli.command('initdb')
 def initdb_command():
@@ -41,8 +47,9 @@ def after_request(response):
     db.close()
     return response
 
+@app.route('/<lang>',methods=['GET', 'POST'])
 @app.route('/',methods=['GET', 'POST'])
-def show_landing():
+def show_landing(lang=None):
     if request.method == 'POST':
         email = request.form['email']
         #app.logger.debug(email)
