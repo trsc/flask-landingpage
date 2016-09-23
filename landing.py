@@ -7,7 +7,7 @@ from model import db, initdb, Signup
 from flask_babel import Babel, gettext
 from flask_assets import Environment, Bundle
 from datetime import datetime
-from peewee import IntegrityError
+from peewee import IntegrityError, SqliteDatabase
 import config
 
 app = Flask(__name__)
@@ -20,6 +20,12 @@ assets.register('scss_all', scss)
 # Load default config and override config from an environment variable
 app.config.from_object('config.DevelopmentConfig')
 app.config.from_envvar('FLASK_SETTINGS', silent=True)
+
+
+# Get full path of database
+basedir = os.path.abspath(os.path.dirname(__file__))
+database = os.path.join(basedir, 'signups.db')
+db.initialize(SqliteDatabase(database))
 
 @babel.localeselector
 def get_locale():

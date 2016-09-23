@@ -1,7 +1,7 @@
 import peewee
 
 #db = peewee.SqliteDatabase("/var/www/hellobudget.co/signups.db")
-db = peewee.SqliteDatabase("signups.db")
+db = peewee.Proxy()
 
 ########################################################################
 class Signup(peewee.Model):
